@@ -12,6 +12,11 @@ var myApp = angular.module('myApp', ['myApp.services', 'ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
         "use strict";
 
+        $routeProvider.when('/patient/add', {
+            templateUrl: 'partials/patient-toevoegen.html',
+            controller: patientAddCtrl
+        });
+
         // Get all books
         $routeProvider.when('/books', {
             templateUrl: 'partials/book-list.html',

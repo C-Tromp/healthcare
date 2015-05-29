@@ -1,0 +1,39 @@
+<h1>Patient toevoegen</h1>
+
+
+<form name="patientForm">
+
+    <h2>Patientinformatie</h2>
+
+    <p>Id: <input type="text" data-ng-model="patient.doc._id" readonly></p>
+
+    <p>Voorletters: <input type="text" data-ng-model="patient.doc.initials"></p>
+
+    <p>Achternaam: <input type="text" data-ng-model="patient.doc.lastName"></p>
+
+    <p>Geboortedatum: <input type="text" data-ng-model="patient.doc.birthDate"></p>
+
+    <p>Geslacht: <select data-ng-model="patient.doc.sex">
+        <option value="male">Man</option>
+        <option value="female">Vrouw</option>
+    </select></p>
+
+    <h2>Opnameinformatie</h2>
+
+    <p>Opnamereden: <input type="text" data-ng-model="patient.doc.admissionReason"></p>
+
+    <p>Opnamedatum: <input type="text" data-ng-model="patient.doc.admissionDate"></p>
+
+    <p>Zorgpad: <input type="text" data-ng-model="patient.doc.carePath"></p>
+
+    <p>Opmerking zorgpad: <input type="text" data-ng-model="patient.doc.carePathComment"></p>
+
+    <p>Algemene opmerking: <input type="text" data-ng-model="patient.doc.generalComment"></p>
+
+    <button type="button" data-ng-click="delete()" id="deleteBtn">Delete</button>
+
+    <button type="button" data-ng-click="save()" id="saveBtn">Save
+    </button>
+
+
+</form>
