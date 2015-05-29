@@ -3,7 +3,7 @@
 (function () {
     "use strict";
 
-    angular.module('myApp.services', ['ngResource']).factory('booksService', ['$resource', '$http',
+    angular.module('healthcare.services', ['ngResource']).factory('healthcareService', ['$resource', '$http',
 
         function ($resource) {
             var actions = {
@@ -15,7 +15,7 @@
                 },
                 db = {};
             // REST url to server
-            db.books = $resource('/api/books/:_id', {}, actions);
+            db.healthcare = $resource('/api/healthcare/:_id', {}, actions);
             return db;
         }]);
 }());
