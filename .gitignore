@@ -130,7 +130,4 @@ crashlytics-build.properties
 # vim swap files
 *.swp
 
-# Skip config.js because of passwords
-config.js
-
 pid
